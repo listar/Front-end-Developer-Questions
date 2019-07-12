@@ -139,7 +139,7 @@
    
    
    
-#JavaScript
+# JavaScript
 
 
 ##介绍js的基本数据类型。
@@ -202,7 +202,7 @@
   
    	add.call(sub,3,1);
    	
-## new操作符具体干了什么呢?
+##new操作符具体干了什么呢?
 
     1) 创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
     2) 属性和方法被加入到 this 引用的对象中。
@@ -252,7 +252,7 @@
     3. ev.stopPropagation();（旧ie的方法 ev.cancelBubble = true;）         
     
     
- ##Javascript如何实现继承？
+##Javascript如何实现继承？
  
      1、构造继承
      2、原型继承
@@ -330,10 +330,12 @@
     
     GET：一般用于信息获取，使用URL传递参数，对所发送信息的数量也有限制，一般在2000个字符
     POST：一般用于修改服务器上的资源，对所发送的信息没有限制。
-    GET方式需要使用Request.QueryString来取得变量的值，而POST方式通过Request.Form来获取变量的值，也就是说Get是通过地址栏来传值，而Post是通过提交表单来传值。
+    GET方式需要使用Request.QueryString来取得变量的值，而POST方式通过Request.Form来获取变量的值，
+    也就是说Get是通过地址栏来传值，而Post是通过提交表单来传值。
+    
     然而，在以下情况中，请使用 POST 请求：
-    ①无法使用缓存文件（更新服务器上的文件或数据库）向服务器发送大量数据（POST 没有数据量限制）。
-    ②发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠。
+        ①无法使用缓存文件（更新服务器上的文件或数据库）向服务器发送大量数据（POST 没有数据量限制）。
+        ②发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠。
     
 
     
@@ -353,6 +355,31 @@
 
     HTTP协议通常承载与 TCP协议之上，在HTTP和TCP之间添加一个安全协议层（SSL或TSL），这个时候，就成了我们常说的HTTPS
     默认HTTP的端口号为80，HTTPS的端口号为443
+    
+    
+    
+    
+# 框架
+ 
+     1. vue
+     2. react
+     3. Angular
+     4. webpack
+     5. glup
+     6. koa
+     7. 一门后端语言
+     8. jQuery 、zepto
+     9. scss、less 、 bootstrap
+     10. loadjs
+     11. commomJs
+     12. eggjs
+     13. flutter
+     14. 微信小程序
+     15. socket.io
+     16. pixijs
+     等等
+     
+        
     
         
 ##other  
