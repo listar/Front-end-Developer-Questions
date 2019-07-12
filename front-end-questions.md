@@ -48,6 +48,9 @@
            
        
    
+   
+   
+   
 #CSS   
    
 ##CSS选择符有哪些？哪些属性可以继承？
@@ -82,6 +85,13 @@
     | table-row-group | table-column | table-column-group | table-footer-group | table-header-group 
     | run-in | box | inline-box | flexbox | inline-flexbox | flex | inline-flex
     
+##display与visibility有何异同？
+    
+    display可以有很多值，visibility只有两个常用值：visible、hidden。
+    当display为none、visibility为hidden时都会隐藏元素。但display会隐藏掉元素空间，visibility会保留元素空间。
+
+
+
 
 ##CSS优先级算法如何计算？
 
@@ -119,6 +129,7 @@
     link方式的样式的权重 高于@import的权重.
 
 #scss、less
+   
    
    
    
@@ -214,6 +225,12 @@
 ##delete操作符的功能是什么？
       
     delete操作符用于删除程序中的所有变量或对象，但不能删除使用VAR关键字声明的变量。
+    var a = ["a", "b"]
+        undefined
+    delete a[0]
+        true
+    a
+        (2) [empty, "b"]
     
     
 ##什么是window对象? 什么是document对象?
@@ -261,6 +278,37 @@
     async并行加载js文件，下载完成立即执行，不会按照页面上script标签的顺序执行
 
 
+##JavaScript原型，原型链 ? 有什么特点？
+
+    ①原型对象也是普通的对象，是对象一个自带隐式的 proto 属性，原型也有可能有自己的原型，如果一个原型对象的原型不为null的话，我们就称之为原型链。
+    ②原型链是由一些用来继承和共享属性的对象组成的（有限的）对象链。
+
+
+
+#other  
+
+##http状态码有那些？分别代表是什么意思？
+
+  	[
+  		100  Continue	继续，一般在发送post请求时，已发送了http header之后服务端将返回此信息，表示确认，之后发送具体参数信息
+  		200  OK 		正常返回信息
+  		201  Created  	请求成功并且服务器创建了新的资源
+  		202  Accepted 	服务器已接受请求，但尚未处理
+  		301  Moved Permanently  请求的网页已永久移动到新位置。
+  		302 Found  		临时性重定向。
+  		303 See Other  	临时性重定向，且总是使用 GET 请求新的 URI。
+  		304  Not Modified 自从上次请求后，请求的网页未修改过。
+
+  		400 Bad Request  服务器无法理解请求的格式，客户端不应当尝试再次使用相同的内容发起请求。
+  		401 Unauthorized 请求未授权。
+  		403 Forbidden  	禁止访问。
+  		404 Not Found  	找不到如何与 URI 相匹配的资源。
+
+  		500 Internal Server Error  最常见的服务器端错误。
+  		503 Service Unavailable 服务器端暂时无法处理请求（可能是过载或维护）。
+  	]
+
+
 ##从输入URL到页面加载发生了什么
     DNS解析
     TCP连接
@@ -269,7 +317,25 @@
     浏览器解析渲染页面
     连接结束
     
+##get和post的区别？
+    
+    GET：一般用于信息获取，使用URL传递参数，对所发送信息的数量也有限制，一般在2000个字符
+    POST：一般用于修改服务器上的资源，对所发送的信息没有限制。
+    GET方式需要使用Request.QueryString来取得变量的值，而POST方式通过Request.Form来获取变量的值，也就是说Get是通过地址栏来传值，而Post是通过提交表单来传值。
+    然而，在以下情况中，请使用 POST 请求：
+    ①无法使用缓存文件（更新服务器上的文件或数据库）向服务器发送大量数据（POST 没有数据量限制）。
+    ②发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠。
+    
+
+    
 ##提高页面加载速度，你会做哪些优化？
+    html 压缩
+    图片懒加载
+    css压缩
+    js压缩
+    cdn
+    服务器配置使用 使用压缩文件
+    等等...
 
     
     
