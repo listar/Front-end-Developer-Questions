@@ -1,8 +1,7 @@
-面试题目  
-=====
+# 前端面试题目  
 
 
-#html
+# html
 
 ##请描述一下 cookies，sessionStorage 和 localStorage 的区别？
 
@@ -51,7 +50,7 @@
    
    
    
-#CSS   
+# CSS   
    
 ##CSS选择符有哪些？哪些属性可以继承？
 
@@ -116,19 +115,25 @@
       
       
 ##实现三个DIV等分排在一行（考察border-box)
+
       1.设置border-box width 33.33%
       2.flexbox flex:1
+      
    
 ##rem 和 em的区别？
+
     em相对于父元素，rem相对于根元素
+    
 
 ##CSS中link 和@import的区别是？
+
     link属于HTML标签，而@import是CSS提供的;
     页面被加载的时，link会同时被加载，而@import被引用的CSS会等到引用它的CSS文件被加载完再加载;
     import只在IE5以上才能识别，而link是HTML标签，无兼容问题;
     link方式的样式的权重 高于@import的权重.
 
-#scss、less
+
+##scss、less
    
    
    
@@ -198,6 +203,7 @@
    	add.call(sub,3,1);
    	
 ## new操作符具体干了什么呢?
+
     1) 创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
     2) 属性和方法被加入到 this 引用的对象中。
     3) 新创建的对象由 this 所引用，并且最后隐式的返回 this 。
@@ -269,11 +275,13 @@
         alert(demo.name);//得到被继承的属性
         
 ##介绍promise
+
       就是一个对象，用来传递异步操作的消息。有三种状态：pending(进行中)，resolved(已完成)和rejected(失败)
       有了promise对象，就可以将异步操作以同步操作的流程表示出来，避免了层层嵌套的回调函数  
         
         
 ##defer 和 async
+
     defer并行加载js文件，会按照页面上script标签的顺序执行
     async并行加载js文件，下载完成立即执行，不会按照页面上script标签的顺序执行
 
@@ -285,7 +293,7 @@
 
 
 
-#other  
+# other  
 
 ##http状态码有那些？分别代表是什么意思？
 
@@ -310,6 +318,7 @@
 
 
 ##从输入URL到页面加载发生了什么
+
     DNS解析
     TCP连接
     发送HTTP请求
@@ -329,6 +338,7 @@
 
     
 ##提高页面加载速度，你会做哪些优化？
+
     html 压缩
     图片懒加载
     css压缩
@@ -340,6 +350,7 @@
     
     
 ##HTTP和HTTPS
+
     HTTP协议通常承载与 TCP协议之上，在HTTP和TCP之间添加一个安全协议层（SSL或TSL），这个时候，就成了我们常说的HTTPS
     默认HTTP的端口号为80，HTTPS的端口号为443
     
