@@ -134,6 +134,14 @@
 
 
 ##scss、less
+
+##关系选择符有哪些?
+
+
+    E F	包含选择符(Descendant combinator)	CSS1	选择所有被E元素包含的F元素。
+    E>F	子选择符(Child combinator)	CSS2	选择所有作为E元素的子元素F。
+    E+F	相邻选择符(Adjacent sibling combinator)	CSS2	选择紧贴在E元素之后F元素。
+    E~F	兄弟选择符(General sibling combinator)	CSS3	选择E元素所有兄弟元素F。
    
    
    
@@ -143,9 +151,18 @@
 
 
 ##介绍js的基本数据类型。
+      
+      最新的 ECMAScript 标准定义了 7 种数据类型:
+      
+      6 种原始类型:
+          Boolean
+          Null
+          Undefined
+          Number
+          String
+          Symbol (ECMAScript 6 新定义) (创建后独一无二且不可变的数据类型 )
+      和 Object
 
-      Undefined、Null、Boolean、Number、String、
-      ECMAScript 2015 新增:Symbol(创建后独一无二且不可变的数据类型 )
 
 ##介绍js有哪些内置对象？
 
@@ -292,6 +309,52 @@
     ②原型链是由一些用来继承和共享属性的对象组成的（有限的）对象链。
 
 
+##什么是生成器方法？ 怎么定义
+
+
+##Object 构造函数的方法
+    Object.assign()
+    通过复制一个或多个对象来创建一个新的对象。
+    Object.create()
+    使用指定的原型对象和属性创建一个新对象。
+    Object.defineProperty()
+    给对象添加一个属性并指定该属性的配置。
+    Object.defineProperties()
+    给对象添加多个属性并分别指定它们的配置。
+    Object.entries()
+    返回给定对象自身可枚举属性的 [key, value] 数组。
+    Object.freeze()
+    冻结对象：其他代码不能删除或更改任何属性。
+    Object.getOwnPropertyDescriptor()
+    返回对象指定的属性配置。
+    Object.getOwnPropertyNames()
+    返回一个数组，它包含了指定对象所有的可枚举或不可枚举的属性名。
+    Object.getOwnPropertySymbols()
+    返回一个数组，它包含了指定对象自身所有的符号属性。
+    Object.getPrototypeOf()
+    返回指定对象的原型对象。
+    Object.is()
+    比较两个值是否相同。所有 NaN 值都相等（这与==和===不同）。
+    Object.isExtensible()
+    判断对象是否可扩展。
+    Object.isFrozen()
+    判断对象是否已经冻结。
+    Object.isSealed()
+    判断对象是否已经密封。
+    Object.keys()
+    返回一个包含所有给定对象自身可枚举属性名称的数组。
+    Object.preventExtensions()
+    防止对象的任何扩展。
+    Object.seal()
+    防止其他代码删除对象的属性。
+    Object.setPrototypeOf()
+    设置对象的原型（即内部 [[Prototype]] 属性）。
+    Object.values()
+    返回给定对象自身可枚举值的数组。
+
+##Array 的迭代方法 有哪些？
+
+
 
 # other  
 
@@ -359,7 +422,7 @@
     
     
     
-# 框架
+# 知识点
  
      1. vue
      2. react
@@ -377,6 +440,10 @@
      14. 微信小程序
      15. socket.io
      16. pixijs
+     17. iconfont、 echarts、 svg
+     18. egret、 cocos2d、 unity
+     19. restful
+     20. 单元测试、eslint
      等等
      
         
