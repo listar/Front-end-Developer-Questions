@@ -440,6 +440,69 @@
     
     
     
+
+
+#vue.js
+
+
+
+##vm.$refs
+
+    
+    vm.$refs    一个对象，持有注册过 ref 特性 的所有 DOM 元素和组件实例。
+
+
+## v-show  和 v-if  的区别    
+
+##vuex
+
+
+##怎么引入远程cdn的js
+
+
+##打包的单个js较大怎么优化
+
+
+##v-for  的keys使用什么值
+
+
+
+##在下次 DOM 更新循环结束之后执行延迟回调
+    
+    Vue.nextTick( [callback, context] )
+    
+    在下次 DOM 更新循环结束之后执行延迟回调。在修改数据之后立即使用这个方法，获取更新后的 DOM。
+    
+    
+    
+##Vue.use( plugin ) 是干什么   
+
+    安装 Vue.js 插件。如果插件是一个对象，必须提供 install 方法。
+    如果插件是一个函数，它会被作为 install 方法。install 方法调用时，会将 Vue 作为参数传入。
+    该方法需要在调用 new Vue() 之前被调用。
+    当 install 方法被同一个插件多次调用，插件将只会被安装一次。
+    
+##keep-alive
+
+    <keep-alive> 包裹动态组件时，会缓存不活动的组件实例，而不是销毁它们。和 <transition> 相似，
+    <keep-alive> 是一个抽象组件：它自身不会渲染一个 DOM 元素，也不会出现在父组件链中。 
+    当组件在 <keep-alive> 内被切换，它的 activated 和 deactivated 这两个生命周期钩子函数将会被对应执行。    
+    
+   
+## template
+  
+    一个字符串模板作为 Vue 实例的标识使用。模板将会 替换 挂载的元素。
+    挂载元素的内容都将被忽略，除非模板的内容有分发插槽。
+    如果值以 # 开始，则它将被用作选择符，并使用匹配元素的 innerHTML 作为模板。
+    常用的技巧是用 <script type="x-template"> 包含模板。      
+    
+## renderError
+
+    只在开发者环境下工作。
+    当 render 函数遭遇错误时，提供另外一种渲染输出。其错误将会作为第二个参数传递到 renderError。这个功能配合 hot-reload 非常实用。    
+   
+    
+## 怎么声明404页面    
     
     
     
