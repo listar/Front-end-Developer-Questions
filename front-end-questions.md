@@ -74,7 +74,7 @@
     block       	块类型。默认宽度为父元素宽度，可设置宽高，换行显示。
     none        	元素不显示，并从文档流中移除。
     inline      	行内元素类型。默认宽度为内容宽度，不可设置宽高，同行显示。
-    inline-block  默认宽度为内容宽度，可以设置宽高，同行显示。
+    inline-block    默认宽度为内容宽度，可以设置宽高，同行显示。
     list-item   	象块类型元素一样显示，并添加样式列表标记。
     table       	此元素会作为块级表格来显示。
     inherit     	规定应该从父元素继承 display 属性的值。
@@ -123,6 +123,9 @@
 ##rem 和 em的区别？
 
     em相对于父元素，rem相对于根元素
+    
+    
+    vh vw px em rem 
     
 
 ##CSS中link 和@import的区别是？
@@ -366,12 +369,92 @@
         设置对象的原型（即内部 [[Prototype]] 属性）。
     Object.values()
         返回给定对象自身可枚举值的数组。
+
+##Map 的使用
+
+        const m = new Map();
+        const o = {p: 'Hello World'};
+
+        m.set(o, 'content')
+        m.get(o) // "content"
+
+        m.has(o) // true
+        m.delete(o) // true
+        m.has(o) // false   
+
+        const map = new Map([
+            ['name', '张三'],
+            ['title', 'Author']
+        ]);
+
+        map.size // 2
+        map.has('name') // true
+        map.get('name') // "张三"
+        map.has('title') // true
+        map.get('title') // "Author" 
+
+        // 例一
+        const entries = new Map([
+        ['foo', 'bar'],
+        ['baz', 42]
+        ]);
+
+        Object.fromEntries(entries)
+        // { foo: "bar", baz: 42 }
+
+        // 例二
+        const map = new Map().set('foo', true).set('bar', false);
+        Object.fromEntries(map)
+        // { foo: true, bar: false }  
+
+##Map遍历方法
+        Map 结构原生提供三个遍历器生成函数和一个遍历方法。
+
+        Map.prototype.keys()：返回键名的遍历器。
+        Map.prototype.values()：返回键值的遍历器。
+        Map.prototype.entries()：返回所有成员的遍历器。
+        Map.prototype.forEach()：遍历 Map 的所有成员。 
+
+##什么时候使用Object，什么时候使用Map  
+    注意区分 Object 和 Map，只有模拟现实世界的实体对象时，才使用 Object。如果只是需要key: value的数据结构，使用 Map 结构。因为 Map 有内建的遍历机制。
         
 
 ##Array 的迭代方法 有哪些？
 
 
 ##什么是深拷贝、浅拷贝， 什么情况下会浅拷贝？
+
+
+##JS 作用域与作用域链 
+
+
+##js是单线程还是多线程， 为什么不是多线程 ？
+
+
+##什么是闭包，闭包解决了什么问题？
+
+
+
+说说写JavaScript的基本规范？
+
+JavaScript原型，原型链 ? 有什么特点？
+
+JavaScript有几种类型的值？（堆：原始数据类型和 栈：引用数据类型），你能画一下他们的内存图吗？
+
+Javascript如何实现继承？
+
+Javascript创建对象的几种方式？
+
+Javascript作用链域?
+
+谈谈this对象的理解。
+
+Webpack热更新实现原理?
+
+请介绍一下JS之事件节流？
+
+什么是JS的函数防抖？
+
 
 
 
@@ -439,6 +522,9 @@
     默认HTTP的端口号为80，HTTPS的端口号为443
     
     
+##跨域问题
+
+    
     
 
 
@@ -447,8 +533,7 @@
 
 
 ##vm.$refs
-
-    
+ 
     vm.$refs    一个对象，持有注册过 ref 特性 的所有 DOM 元素和组件实例。
 
 
@@ -463,7 +548,7 @@
 ##打包的单个js较大怎么优化
 
 
-##v-for  的keys使用什么值
+##v-for  的keys使用什么值  keys的作用
 
 
 
@@ -501,8 +586,35 @@
     只在开发者环境下工作。
     当 render 函数遭遇错误时，提供另外一种渲染输出。其错误将会作为第二个参数传递到 renderError。这个功能配合 hot-reload 非常实用。    
    
+##mvvm    
+
     
-## 怎么声明404页面    
+##怎么声明404页面 
+
+
+##.vue是怎么解析到浏览器可识别js
+
+
+
+
+#angularjs2
+
+##Angular 2 应用程序应用主要由以下 8 个部分组成：
+        1、模块 (Modules)
+        2、组件 (Components)
+        3、模板 (Templates)
+        4、元数据 (Metadata)
+        5、数据绑定 (Data Binding)
+        6、指令 (Directives)
+        7、服务 (Services)
+        8、依赖注入 (Dependency Injection)
+        
+## Angular 有三种类型的视图类： 
+        组件 、 指令 和 管道 。
+
+##ng-show/ng-hide 与 ng-if的区别？
+        我们都知道ng-show/ng-hide实际上是通过display来进行隐藏和显示的。
+        而ng-if实际上控制dom节点的增删除来实现的。因此如果我们是根据不同的条件来进行dom节点的加载的话，那么ng-if的性能好过ng-show.
     
     
     
