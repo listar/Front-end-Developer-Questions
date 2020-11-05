@@ -1,6 +1,5 @@
 # 前端面试题目  
 
-
 # html
 
 ##请描述一下 cookies，sessionStorage 和 localStorage 的区别？
@@ -417,7 +416,12 @@
 
 ##什么时候使用Object，什么时候使用Map  
     注意区分 Object 和 Map，只有模拟现实世界的实体对象时，才使用 Object。如果只是需要key: value的数据结构，使用 Map 结构。因为 Map 有内建的遍历机制。
-        
+
+
+##Javascript的事件流模型都有什么？    
+    “事件冒泡”：事件开始由最具体的元素接受，然后逐级向上传播
+    “事件捕捉”：事件由最不具体的节点先接收，然后逐级向下，一直到最具体的
+    “DOM事件流”：三个阶段：事件捕捉，目标阶段，事件冒泡    
 
 ##Array 的迭代方法 有哪些？
 
@@ -667,4 +671,31 @@ Webpack热更新实现原理?
     最近在学什么？接下来半年你打算学习什么？
     做什么方面的事情最让你有成就感？需求设计？规划？具体开发？
     后续想做什么？3 年后你希望自己是什么水平？
+
+#其他面试题
+
+
+
+# 前端学习网站推荐    
+        1. 极客标签：     http://www.gbtags.com/
+
+        2. 码农周刊：     http://weekly.manong.io/issues/
+
+        3. 前端周刊：     http://www.feweekly.com/issues
+
+        4. 慕课网：       http://www.imooc.com/
+
+        5. div.io：		 http://div.io
+
+        6. Hacker News： https://news.ycombinator.com/news
+
+        7. InfoQ：       http://www.infoq.com/
+
+        8. w3cplus：     http://www.w3cplus.com/
+
+        9. Stack Overflow： http://stackoverflow.com/
+
+        10.w3school：    http://www.w3school.com.cn/
+
+        11.mozilla：     https://developer.mozilla.org/zh-CN/docs/Web/JavaScript
         
