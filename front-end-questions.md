@@ -2,7 +2,7 @@
 
 # html
 
-##请描述一下 cookies，sessionStorage 和 localStorage 的区别？
+## 请描述一下 cookies，sessionStorage 和 localStorage 的区别？
 
       - cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。
       - cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。
@@ -19,7 +19,7 @@
         
   	
   	
-##iframe有那些缺点？
+## iframe有那些缺点？
       *iframe会阻塞主页面的Onload事件；
       *搜索引擎的检索程序无法解读这种页面，不利于SEO;
     
@@ -29,13 +29,13 @@
       动态给iframe添加src属性值，这样可以绕开以上两个问题。
   
   
-##网页验证码是干嘛的，是为了解决什么安全问题。
+## 网页验证码是干嘛的，是为了解决什么安全问题。
   
        - 区分用户是计算机还是人的公共全自动程序。可以防止恶意破解密码、刷票、论坛灌水；
        - 有效防止黑客对某一个特定注册用户用特定程序暴力破解方式进行不断的登陆尝试。
  
 
-##如何实现浏览器内多个标签页之间的通信? 
+## 如何实现浏览器内多个标签页之间的通信? 
  
         WebSocket、SharedWorker；
        也可以调用localstorge、cookies等本地存储方式；
@@ -51,7 +51,7 @@
    
 # CSS   
    
-##CSS选择符有哪些？哪些属性可以继承？
+## CSS选择符有哪些？哪些属性可以继承？
 
       *   1.id选择器（ # myid）
         2.类选择器（.myclassname）
@@ -68,7 +68,7 @@
       *   不可继承的样式：border padding margin width height ;   
    
    
-##display有哪些值？说明他们的作用。
+## display有哪些值？说明他们的作用。
 
     block       	块类型。默认宽度为父元素宽度，可设置宽高，换行显示。
     none        	元素不显示，并从文档流中移除。
@@ -83,7 +83,7 @@
     | table-row-group | table-column | table-column-group | table-footer-group | table-header-group 
     | run-in | box | inline-box | flexbox | inline-flexbox | flex | inline-flex
     
-##display与visibility有何异同？
+## display与visibility有何异同？
     
     display可以有很多值，visibility只有两个常用值：visible、hidden。
     当display为none、visibility为hidden时都会隐藏元素。但display会隐藏掉元素空间，visibility会保留元素空间。
@@ -91,7 +91,7 @@
 
 
 
-##CSS优先级算法如何计算？
+## CSS优先级算法如何计算？
 
      *   优先级就近原则，同权重情况下样式定义最近者为准;
      *   载入样式以最后载入的定位为准;
@@ -101,7 +101,7 @@
         !important >  id > class > tag
         important 比 内联优先级高
    
-##用纯CSS创建一个三角形的原理是什么？   
+## 用纯CSS创建一个三角形的原理是什么？   
 
     把上、左、右三条边隐藏掉（颜色设为 transparent）
       #demo {
@@ -113,13 +113,13 @@
       }
       
       
-##实现三个DIV等分排在一行（考察border-box)
+## 实现三个DIV等分排在一行（考察border-box)
 
       1.设置border-box width 33.33%
       2.flexbox flex:1
       
    
-##rem 和 em的区别？
+## rem 和 em的区别？
 
     em相对于父元素，rem相对于根元素
     
@@ -127,7 +127,7 @@
     vh vw px em rem 
     
 
-##CSS中link 和@import的区别是？
+## CSS中link 和@import的区别是？
 
     link属于HTML标签，而@import是CSS提供的;
     页面被加载的时，link会同时被加载，而@import被引用的CSS会等到引用它的CSS文件被加载完再加载;
@@ -135,9 +135,9 @@
     link方式的样式的权重 高于@import的权重.
 
 
-##scss、less
+## scss、less
 
-##关系选择符有哪些?
+## 关系选择符有哪些?
 
 
     E F	包含选择符(Descendant combinator)	CSS1	选择所有被E元素包含的F元素。
@@ -146,16 +146,16 @@
     E~F	兄弟选择符(General sibling combinator)	CSS3	选择E元素所有兄弟元素F。
    
    
-* 什么是 BFC
+## 什么是 BFC
 
    BFC（Block Formatting Context）格式化上下文，是 Web 页面中盒模型布局的 CSS 渲染模式，指一个独立的渲染区域或者说是一个隔离的独立容器。
-* 形成 BFC 的条件
+### 形成 BFC 的条件
 
    * 浮动元素，float 除 none 以外的值
    * 定位元素，position（absolute，fixed）
    * display 为以下其中之一的值 inline-block，table-cell，table-caption
    * overflow 除了 visible 以外的值（hidden，auto，scroll）
-* BFC 的特性
+### BFC 的特性
    * 内部的 Box 会在垂直方向上一个接一个的放置。
    * 垂直方向上的距离由 margin 决定
    * bfc 的区域不会与 float 的元素区域重叠。
@@ -168,7 +168,7 @@
 # JavaScript
 
 
-##介绍js的基本数据类型。
+## 介绍js的基本数据类型。
       
       最新的 ECMAScript 标准定义了 7 种数据类型:
       
@@ -183,7 +183,7 @@
       和 Object
 
 
-##介绍js有哪些内置对象？
+## 介绍js有哪些内置对象？
 
      Object 是 JavaScript 中所有对象的父对象
     
@@ -192,25 +192,33 @@
     
      参考：http://www.ibm.com/developerworks/cn/web/wa-objectsinjs-v1b/index.html
 
-##说几条写JavaScript的基本规范？
+## 说几条写JavaScript的基本规范？
 
-     1.不要在同一行声明多个变量。
-     2.请使用 ===/!==来比较true/false或者数值
-     3.使用对象字面量替代new Array这种形式
-     4.不要使用全局函数。
-     5.Switch语句必须带有default分支
-     6.函数不应该有时候有返回值，有时候没有返回值。
-     7.For循环必须使用大括号
-     8.If语句必须使用大括号
-     9.for-in循环中的变量 应该使用var关键字明确限定作用域，从而避免作用域污染。
+     1、不要在同一行声明多个变量
+        2、使用===或!==来比较
+        3、使用字面量的方式来创建对象、数组，替代new Array这种形式
+        4、不要使用全局函数
+        5、switch语句必须要带default分支
+        6、函数不应该有的时候有return，有的时候没有return
+        7、fon-in循环中的变量，用var关键字说明作用域，防止变量污染
+        8、变量的声明遵循驼峰命名法，声明构造函数时首字母大写，定义常量的时候尽量用大写字母，用_分割
+        9、三元表达式可以替代if语句
+        10、&&和||是可以短路的，使用&&时如果前面一个值是错的，那么后面的值不用判断，使用||时，如果前面一个值是对的，那么后面的值不用判断
+        11、比较数据类型以下6种情况是false，其他都是true：false、""、0、null、NaN、undefined
+        12、数据类型检测用typeof，对象类型检测用instanceof
+        13、异步加载第三方的内容
+        14、单行注释//，多行注释/**/
+        15、使用命名空间解决变量名冲突
+        16、多人协作开发，新建一个js文件，const声明常量，在js文件中引用，用常量名替代方法名，这样做可以防止命名冲突
+
  
-##eval是做什么的？
+## eval是做什么的？
 
      它的功能是把对应的字符串解析成JS代码并运行；
      应该避免使用eval，不安全，非常耗性能（2次，一次解析成js语句，一次执行）。
      由JSON字符串转换为JSON对象的时候可以用eval，var obj =eval('('+ str +')');
      
-##null，undefined 的区别？
+## null，undefined 的区别？
 
      null 		表示一个对象是“没有值”的值，也就是值为“空”；
      undefined 	表示一个变量声明了没有初始化(赋值)；
@@ -220,7 +228,7 @@
      null的类型(typeof)是object；
  
  
-##.call() 和 .apply() 的区别？
+## .call() 和 .apply() 的区别？
   
      例子中用 add 来替换 sub，add.call(sub,3,1) == add(3,1) ，所以运行结果为：alert(4);
   
@@ -238,7 +246,7 @@
   
    	add.call(sub,3,1);
    	
-##new操作符具体干了什么呢?
+## new操作符具体干了什么呢?
 
     1) 创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。
     2) 属性和方法被加入到 this 引用的对象中。
@@ -253,7 +261,7 @@
 
 
    	
-##javascript 代码中的"use strict";是什么意思 ? 使用它区别是什么？
+## javascript 代码中的"use strict";是什么意思 ? 使用它区别是什么？
   
        use strict是一种ECMAscript 5 添加的（严格）运行模式,这种模式使得 Javascript 在更严格的条件下运行,
       
@@ -265,14 +273,14 @@
        提高编译器效率，增加运行速度；
        为未来新版本的Javascript标准化做铺垫。
    
-##如何判断一个对象是否属于某个类？
+## 如何判断一个对象是否属于某个类？
   
      使用instanceof （待完善）
       if(a instanceof Person){
           alert('yes');
       }
       
-##delete操作符的功能是什么？
+## delete操作符的功能是什么？
       
     delete操作符用于删除程序中的所有变量或对象，但不能删除使用VAR关键字声明的变量。
     var a = ["a", "b"]
@@ -283,20 +291,20 @@
         (2) [empty, "b"]
     
     
-##什么是window对象? 什么是document对象?
+## 什么是window对象? 什么是document对象?
 
     window对象是指浏览器打开的窗口。
     document对象是Documentd对象（HTML 文档对象）的一个只读引用，window对象的一个属性。 
     
       
-##事件是？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？
+## 事件是？IE与火狐的事件机制有什么区别？ 如何阻止冒泡？
   
     1. 我们在网页中的某个操作（有的操作对应多个事件）。例如：当我们点击一个按钮就会产生一个事件。是可以被 JavaScript 侦测到的行为。
     2. 事件处理机制：IE是事件冒泡、Firefox同时支持两种事件模型，也就是：捕获型事件和冒泡型事件；
     3. ev.stopPropagation();（旧ie的方法 ev.cancelBubble = true;）         
     
     
-##Javascript如何实现继承？
+## Javascript如何实现继承？
  
      1、构造继承
      2、原型继承
@@ -318,30 +326,30 @@
         alert(demo.age);
         alert(demo.name);//得到被继承的属性
         
-##介绍promise
+## 介绍promise
 
       就是一个对象，用来传递异步操作的消息。有三种状态：pending(进行中)，resolved(已完成)和rejected(失败)
       有了promise对象，就可以将异步操作以同步操作的流程表示出来，避免了层层嵌套的回调函数  
         
         
-##defer 和 async
+## defer 和 async
 
     defer并行加载js文件，会按照页面上script标签的顺序执行
     async并行加载js文件，下载完成立即执行，不会按照页面上script标签的顺序执行
 
 
-##JavaScript原型，原型链 ? 有什么特点？
+## JavaScript原型，原型链 ? 有什么特点？
 
     ①原型对象也是普通的对象，是对象一个自带隐式的 proto 属性，原型也有可能有自己的原型，如果一个原型对象的原型不为null的话，我们就称之为原型链。
     ②原型链是由一些用来继承和共享属性的对象组成的（有限的）对象链。
 
 
-##什么是生成器方法？ 怎么定义
+## 什么是生成器方法？ 怎么定义
 
     生成器对象是由一个 generator function 返回的,并且它符合可迭代协议和迭代器协议。
     
 
-##生成器有哪些方法
+## 生成器有哪些方法
 
     Generator.prototype.next() 
         返回 yield 表达式产生的值. 与ES2015 生成器对象的next()方法对应.
@@ -353,7 +361,7 @@
         向生成器抛出错误. 与ES2015 生成器对象的throw()方法对应.
 
 
-##Object 构造函数的方法
+## Object 构造函数的方法
 
     Object.assign()
         通过复制一个或多个对象来创建一个新的对象。
@@ -394,7 +402,7 @@
     Object.values()
         返回给定对象自身可枚举值的数组。
 
-##Map 的使用
+## Map 的使用
 
         const m = new Map();
         const o = {p: 'Hello World'};
@@ -431,7 +439,7 @@
         Object.fromEntries(map)
         // { foo: true, bar: false }  
 
-##Map遍历方法
+## Map遍历方法
         Map 结构原生提供三个遍历器生成函数和一个遍历方法。
 
         Map.prototype.keys()：返回键名的遍历器。
@@ -439,22 +447,22 @@
         Map.prototype.entries()：返回所有成员的遍历器。
         Map.prototype.forEach()：遍历 Map 的所有成员。 
 
-##什么时候使用Object，什么时候使用Map  
+## 什么时候使用Object，什么时候使用Map  
     注意区分 Object 和 Map，只有模拟现实世界的实体对象时，才使用 Object。如果只是需要key: value的数据结构，使用 Map 结构。因为 Map 有内建的遍历机制。
 
 
-##Javascript的事件流模型都有什么？    
+## Javascript的事件流模型都有什么？    
     “事件冒泡”：事件开始由最具体的元素接受，然后逐级向上传播
     “事件捕捉”：事件由最不具体的节点先接收，然后逐级向下，一直到最具体的
     “DOM事件流”：三个阶段：事件捕捉，目标阶段，事件冒泡    
 
-##Array 的迭代方法 有哪些？
+## Array 的迭代方法 有哪些？
 
 
-##什么是深拷贝、浅拷贝， 什么情况下会浅拷贝？
+## 什么是深拷贝、浅拷贝， 什么情况下会浅拷贝？
 
 
-##JS 作用域与作用域链 
+## JS 作用域与作用域链 
 
 ### 什么是作用域？
     ES5 中只存在两种作用域：全局作用域和函数作用域。在 JavaScript 中，我们将作用域定义为一套规则，这套规则用来管理引擎如何在当前作用域以及嵌套子作用域中根据标识符名称进行变量（变量名或者函数名）查找
@@ -466,7 +474,7 @@
 ##js是单线程还是多线程， 为什么不是多线程 ？
 
 
-##什么是闭包，闭包解决了什么问题？
+## 什么是闭包，闭包解决了什么问题？
 
     闭包是指有权访问另外一个函数作用域中的变量的函数
     JavaScript代码的整个执行过程，分为两个阶段，代码编译阶段与代码执行阶段。编译阶段由编译器完成，将代码翻译成可执行代码，这个阶段作用域规则会确定。执行阶段由引擎完成，主要任务是执行可执行代码，执行上下文在这个阶段创建。
@@ -538,6 +546,12 @@ Event Loop即事件循环，是指浏览器或Node的一种解决javaScript单�
     }
     }
 
+### 什么是柯里化（ curry）
+        在数学和计算机科学中，柯里化是一种将使用多个参数的一个函数转换成一系列使用一个参数的函数的技术。
+        举例来说，一个接收3个参数的普通函数，在进行柯里化后， 柯里化版本的函数接收一个参数并返回接收下一个参数的函数， 该函数返回一个接收第三个参数的函数。 最后一个函数在接收第三个参数后， 将之前接收到的三个参数应用于原普通函数中，并返回最终结果。
+
+
+
 ## 问：变量提升
 函数在运行的时候，会首先创建执行上下文，然后将执行上下文入栈，然后当此执行上下文处于栈顶时，开始运行执行上下文。
 在创建执行上下文的过程中会做三件事：创建变量对象，创建作用域链，确定 this 指向，其中创建变量对象的过程中，首先会为 arguments 创建一个属性，值为 arguments，然后会扫码 function 函数声明，创建一个同名属性，值为函数的引用，接着会扫码 var 变量声明，创建一个同名属性，值为 undefined，这就是变量提升
@@ -584,11 +598,58 @@ Webpack热更新实现原理?
 ## Object.defineProperty()   Proxy
 
 
+## 为什么 JavaScript 是单线程
+JavaScript语言的一大特点就是单线程，也就是说，同一个时间只能做一件事。那么，为什么JavaScript不能有多个线程呢？这样能提高效率啊。
+JavaScript的单线程，与它的用途有关。作为浏览器脚本语言，JavaScript的主要用途是与用户互动，以及操作DOM。这决定了它只能是单线程，否则会带来很复杂的同步问题。比如，假定JavaScript同时有两个线程，一个线程在某个DOM节点上添加内容，另一个线程删除了这个节点，这时浏览器应该以哪个线程为准？
+所以，为了避免复杂性，从一诞生，JavaScript就是单线程，这已经成了这门语言的核心特征，将来也不会改变。
+为了利用多核CPU的计算能力，HTML5提出Web Worker标准，允许JavaScript脚本创建多个线程，但是子线程完全受主线程控制，且不得操作DOM。所以，这个新标准并没有改变JavaScript单线程的本质。
+
+
+## 为什么要有Event Loop？
+因为Javascript设计之初就是一门单线程语言，因此为了实现主线程的不阻塞，Event Loop这样的方案应运而生。
+Event Loop即事件循环，是指浏览器或Node的一种解决javaScript单线程运行时不会阻塞的一种机制，也就是我们经常使用异步的原理。
+
+
+## Event Loop 任务
+在JavaScript中，任务被分为两种，一种宏任务（MacroTask）也叫Task，一种叫微任务（MicroTask）。
+MacroTask（宏任务），包括setTimeout、setInterval、setImmediate（浏览器暂时不支持，只有IE10支持）、I/O、UI交互事件 
+MicroTask（微任务），包括Promise、process.nextTick（Node独有）、MutaionObserver
+
+
+## 介绍下 webpack 热更新原理，是如何做到在不刷新浏览器的前提下更新页面 
+
+    1.当修改了一个或多个文件；
+    2.文件系统接收更改并通知webpack；
+    3.webpack重新编译构建一个或多个模块，并通知HMR服务器进行更新；
+    4.HMR Server 使用webSocket通知HMR runtime 需要更新，HMR运行时通过HTTP请求更新jsonp；
+    5.HMR运行时替换更新中的模块，如果确定这些模块无法更新，则触发整个页面刷新。
+    https://zhuanlan.zhihu.com/p/30669007
+
+
+## package.json
+    安装项目依赖（dependencies & devDependencies）
+
+
+    dependencies字段指定了项目运行所依赖的模块（生产环境使用），如 antd、 react、 moment等插件库：
+
+    它们是我们生产环境所需要的依赖项，在把项目作为一个 npm 包的时候，用户安装 npm 包时只会安装 dependencies 里面的依赖。
+
+
+
+    devDependencies 字段指定了项目开发所需要的模块（开发环境使用），如 webpack、typescript、babel等：
+
+    在代码打包提交线上时，我们并不需要这些工具，所以我们将它放入 devDependencies 中。
+
+
+
+    如果一个模块不在 package.json 文件之中，我们可以单独安装这个模块，并使用相应的参数，将其写入 dependencies 字段/ devDependencies 字段中：
+
+
 
 
 # other  
 
-##http状态码有那些？分别代表是什么意思？
+## http状态码有那些？分别代表是什么意思？
 
   	[
   		100  Continue	继续，一般在发送post请求时，已发送了http header之后服务端将返回此信息，表示确认，之后发送具体参数信息
@@ -610,7 +671,7 @@ Webpack热更新实现原理?
   	]
 
 
-##从输入URL到页面加载发生了什么
+## 从输入URL到页面加载发生了什么
 
     DNS解析
     TCP连接
@@ -619,7 +680,7 @@ Webpack热更新实现原理?
     浏览器解析渲染页面
     连接结束
     
-##get和post的区别？
+## get和post的区别？
     
     GET：一般用于信息获取，使用URL传递参数，对所发送信息的数量也有限制，一般在2000个字符
     POST：一般用于修改服务器上的资源，对所发送的信息没有限制。
@@ -632,7 +693,7 @@ Webpack热更新实现原理?
     
 
     
-##提高页面加载速度，你会做哪些优化？
+## 提高页面加载速度，你会做哪些优化？
 
     html 压缩
     图片懒加载
@@ -644,39 +705,57 @@ Webpack热更新实现原理?
 
     
     
-##HTTP和HTTPS
+## HTTP和HTTPS
 
     HTTP协议通常承载与 TCP协议之上，在HTTP和TCP之间添加一个安全协议层（SSL或TSL），这个时候，就成了我们常说的HTTPS
     默认HTTP的端口号为80，HTTPS的端口号为443
     
     
-##跨域问题
+## 跨域问题
 
     
-    
 
 
-#vue.js
+## SSR是什么？
+SSR也就是服务端渲染，也就是将Vue在客户端把标签渲染成HTML的工作放在服务端完成，然后再把html直接返回给客户端。
+SSR有着更好的SEO、并且首屏加载速度更快等优点。不过它也有一些缺点，比如我们的开发条件会受到限制，服务器端渲染只支持beforeCreate和created两个钩子，当我们需要一些外部扩展库时需要特殊处理，服务端渲染应用程序也需要处于Node.js的运行环境。还有就是服务器会有更大的负载需求。
 
 
 
-##vm.$refs
+# vue.js
+
+
+
+## vm.$refs
  
     vm.$refs    一个对象，持有注册过 ref 特性 的所有 DOM 元素和组件实例。
 
 
 ## v-show  和 v-if  的区别    
 
-##vuex
+## 介绍一下 Vuex 吧
+
+    Vuex 是一个专为 Vue.js 应用程序开发的状态管理模式。每一个 Vuex 应用的核心就是 store（仓库）。store 基本上就是一个容器，它包含着你的应用中大部分的状态 ( state )。
+    （1）Vuex 的状态存储是响应式的。当 Vue 组件从 store 中读取状态的时候，若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新。
+    （2）改变 store 中的状态的唯一途径就是显式地提交 (commit) mutation。这样使得我们可以方便地跟踪每一个状态的变化。
+    主要包括以下几个模块：
+
+    State：定义了应用状态的数据结构，可以在这里设置默认的初始状态。
+    Getter：允许组件从 Store 中获取数据，mapGetters 辅助函数仅仅是将 store 中的 getter 映射到局部计算属性。
+    Mutation：是唯一更改 store 中状态的方法，且必须是同步函数。
+    Action：用于提交 mutation，而不是直接变更状态，可以包含任意异步操作。
+    Module：允许将单一的 Store 拆分为多个 store 且同时保存在单一的状态树中。
 
 
-##怎么引入远程cdn的js
 
 
-##打包的单个js较大怎么优化
+## 怎么引入远程cdn的js
 
 
-##v-for  的keys使用什么值  keys的作用
+## 打包的单个js较大怎么优化
+
+
+## v-for  的keys使用什么值  keys的作用
 
 
 
@@ -688,14 +767,14 @@ Webpack热更新实现原理?
     
     
     
-##Vue.use( plugin ) 是干什么   
+## Vue.use( plugin ) 是干什么   
 
     安装 Vue.js 插件。如果插件是一个对象，必须提供 install 方法。
     如果插件是一个函数，它会被作为 install 方法。install 方法调用时，会将 Vue 作为参数传入。
     该方法需要在调用 new Vue() 之前被调用。
     当 install 方法被同一个插件多次调用，插件将只会被安装一次。
     
-##keep-alive
+## keep-alive
 
     <keep-alive> 包裹动态组件时，会缓存不活动的组件实例，而不是销毁它们。和 <transition> 相似，
     <keep-alive> 是一个抽象组件：它自身不会渲染一个 DOM 元素，也不会出现在父组件链中。 
@@ -712,38 +791,60 @@ Webpack热更新实现原理?
 ## renderError
 
     只在开发者环境下工作。
-    当 render 函数遭遇错误时，提供另外一种渲染输出。其错误将会作为第二个参数传递到 renderError。这个功能配合 hot-reload 非常实用。    
-   
-##mvvm    
+    当 render 函数遭遇错误时，提供另外一种渲染输出。其错误将会作为第二个参数传递到 renderError。这个功能配合 hot-reload 非常实用。   
+
+
+
+## 为什么vue组件中的 data 必须是一个函数，return 一个对象
+因为组件是用来复用的，且 JS 里对象是引用类型，如果组件中 data 是一个对象，子组件中的 data 属性值会相互影响，如果组件中 data 选项是一个函数，每个实例可以维护一份被返回对象的独立拷贝，组件实例之间的 data 属性值不会互相影响
+
+追问：new Vue 实例里，data 可以直接是一个对象？
+
+new Vue() 是根组件，是不会被复用的，因此不存在引用对象的问题。
+
+
+## 介绍一下Vue中的Diff算法
+
+首先，对比节点本身，判断是否为同一节点，如果不为相同节点，则删除该节点重新创建节点进行替换。
+如果为相同节点，进行patchVnode，判断如何对该节点的子节点进行处理，先判断一方有子节点一方没有子节点的情况(如果新的children没有子节点，将旧的子节点移除)。
+比较如果都有子节点，则进行updateChildren，判断如何对这些新老节点的子节点进行操作（diff核心）。
+匹配时，找到相同的子节点，递归比较子节点。
+
+在diff中，只对同层的子节点进行比较，放弃跨级的节点比较，使得时间复杂从O(n^3)降低值O(n)，也就是说，只有当新旧children都为多个子节点时才需要用核心的Diff算法进行同层级比较。
+
+## mvvm    
 
     
-##怎么声明404页面 
+## 怎么声明404页面 
 
 
-##.vue是怎么解析到浏览器可识别js
+## .vue是怎么解析到浏览器可识别js
 
 
 
 
 ## Vue vs React的区别
 
-相同点：
+### 相同点：
 
         使用virtural DOM + Diff算法。
         组件化思想。
 
-不同点：
+### 不同点：
 
         模板语法的不同：react通过JSX渲染模板，vue通过拓展的html语法进行渲染。比如react中插值、条件、循环都通过JS语法实现，vue是通过指令v-bind、v-if、v-for实现的。
-        监听数据变化原理不同：vue通过getter、setter劫持通知数据变化，react通过比较引用的方式进行。vue使用的响应式数据，而react是不可变数据。vue改变数据直接赋值，react需要调用setState方法（用新的state替换旧的state）。
+        监听数据变化原理不同：vue通过getter、setter劫持通知数据变化，react通过比较引用的方式进行。
+        vue使用的响应式数据，而react是不可变数据。vue改变数据直接赋值，react需要调用setState方法（用新的state替换旧的state）。
 
 
 
 
 
-#angularjs2
 
-##Angular 2 应用程序应用主要由以下 8 个部分组成：
+
+# angularjs2
+
+## Angular 2 应用程序应用主要由以下 8 个部分组成：
         1、模块 (Modules)
         2、组件 (Components)
         3、模板 (Templates)
@@ -759,10 +860,38 @@ Webpack热更新实现原理?
 ##ng-show/ng-hide 与 ng-if的区别？
         我们都知道ng-show/ng-hide实际上是通过display来进行隐藏和显示的。
         而ng-if实际上控制dom节点的增删除来实现的。因此如果我们是根据不同的条件来进行dom节点的加载的话，那么ng-if的性能好过ng-show.
+
+
+
+
+ ## TypeScript
+
+ ### TypeScript的特点
+
+    类型检查。TypeScript在编译代码时进行严格的静态类型检查。这就意味着在编码阶段可能存在的隐患，不必把它们带到线上。
+
+    语言扩展。TypeScript会包括ES6和未来提案中的特性，比如异步操作和装饰器。也会从其他语言借鉴某些特点，比如接口和抽象类。
+
+    工具属性。TypeScript 可以编译成标准的 Javascript。可以在任何浏览器和操作系统上运行。无需任何运行时额外开销。从这个角度讲TypeScript更像时一个工具。
+
+### 类型
+    TypeScript中定义了布尔值boolean、数字number、字符串string、数组Array、元组、枚举、接口、any、void等。
+
+    元组。元组表示的是一个已知元素数量和类型的数组，各元素的类型不必相同。
+
+### TS 编译流程
+    和Babel以及其他编译到 Javascript 的工具类似， TS　的编译流程包含一下三步：
+    解析 －> 转换  －> 生成
+    包含了一下几个关键部分：
+
+    Scanner：从源码生成 Token
+    Parser: 从 Token 生成 AST
+    Binder：从AST 生成 Symbol
+    Checker：类型检查
+    Emitter： 生成最终的 JS 文件
+
     
-    
-    
-#知识点
+# 知识点
  
      1. vue
      2. react
@@ -789,13 +918,13 @@ Webpack热更新实现原理?
      等等
      
         
-##设计模式
+## 设计模式
 
      mvc
      mvvm
      mvp
         
-##other  
+## other  
 
     除了前端以外还了解什么其它技术么？
 
