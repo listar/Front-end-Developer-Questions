@@ -1,5 +1,6 @@
 # Front-end-Developer-Questions
-Front-end-Developer-Questions
++ 计算机信息
++ 前端面试题目
 
 
 <a href="front-end-questions.md">查看面试题</a>
@@ -12,9 +13,9 @@ Front-end-Developer-Questions
 
 <a href="front-high.md">查看面试题2</a>
 
-
 <br/>
-予人玫瑰手有余香，欢迎提交新的题目和答案！
+
+<a href="计算机信息.md">计算机信息</a>
 
 
 
